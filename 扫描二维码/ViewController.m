@@ -25,16 +25,16 @@
     // 扫描button
     UIButton *scanButton = [[UIButton alloc]initWithFrame:CGRectMake(90, 190, 200, 30)];
     [self.view addSubview:scanButton];
-    [scanButton setTitle:@"扫描二维码" forState:UIControlStateNormal];
+    [scanButton setTitle:@"扫描二维码或条码" forState:UIControlStateNormal];
     [scanButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [scanButton addTarget:self action:@selector(scan) forControlEvents:UIControlEventTouchDown];
 }
 
-#pragma mark - 扫描二维码
-/** 扫描二维码 */
+#pragma mark - 扫描二维码或条码
+/** 扫描二维码或条码 */
 - (void)scan{
     // Create the reader object
-    QRCodeReader *reader = [QRCodeReader readerWithMetadataObjectTypes:@[AVMetadataObjectTypeQRCode]];
+    QRCodeReader *reader = [QRCodeReader readerWithMetadataObjectTypes:@[AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeCode128Code, AVMetadataObjectTypeQRCode]];
     
     // Instantiate the view controller
     QRCodeReaderViewController *vc = [QRCodeReaderViewController readerWithCancelButtonTitle:@"取消" codeReader:reader startScanningAtLoad:YES showSwitchCameraButton:YES showTorchButton:YES];
@@ -48,7 +48,7 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
-#pragma mark - 二维码扫描相关代理方法
+#pragma mark - 扫描相关代理方法
 // 扫描成功
 - (void)reader:(QRCodeReaderViewController *)reader didScanResult:(NSString *)result
 {

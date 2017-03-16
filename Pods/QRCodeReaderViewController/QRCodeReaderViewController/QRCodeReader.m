@@ -44,7 +44,7 @@
 - (id)init
 {
   if ((self = [super init])) {
-    _metadataObjectTypes = @[AVMetadataObjectTypeQRCode];
+    _metadataObjectTypes = @[AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeCode128Code, AVMetadataObjectTypeQRCode];
 
     [self setupAVComponents];
     [self configureDefaultComponents];
@@ -224,7 +224,7 @@
 
     if (metadataObjectTypes == nil || metadataObjectTypes.count == 0) {
       // Check the QRCode metadata object type by default
-      metadataObjectTypes = @[AVMetadataObjectTypeQRCode];
+      metadataObjectTypes = @[AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeCode128Code, AVMetadataObjectTypeQRCode];
     }
 
     for (NSString *metadataObjectType in metadataObjectTypes) {

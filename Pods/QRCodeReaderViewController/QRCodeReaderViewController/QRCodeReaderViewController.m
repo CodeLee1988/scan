@@ -59,7 +59,7 @@
 
 - (id)initWithCancelButtonTitle:(NSString *)cancelTitle
 {
-  return [self initWithCancelButtonTitle:cancelTitle metadataObjectTypes:@[AVMetadataObjectTypeQRCode]];
+  return [self initWithCancelButtonTitle:cancelTitle metadataObjectTypes:@[AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeCode128Code, AVMetadataObjectTypeQRCode]];
 }
 
 - (id)initWithMetadataObjectTypes:(NSArray *)metadataObjectTypes

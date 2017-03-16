@@ -234,7 +234,7 @@
 				TargetAttributes = {
 					D9E7D70A1E7A38A500B6AF89 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = YUSZJ893SU;
+						DevelopmentTeam = 4J5JWPJ294;
 						ProvisioningStyle = Automatic;
 					};
 					D9E7D7231E7A38A500B6AF89 = {
@@ -503,11 +503,11 @@
 			baseConfigurationReference = 413FE89323E2F52163886444 /* Pods-扫描二维码.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YUSZJ893SU;
+				DEVELOPMENT_TEAM = 4J5JWPJ294;
 				INFOPLIST_FILE = "扫描二维码/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "KuaiJianKang.-----";
+				PRODUCT_BUNDLE_IDENTIFIER = "KuaiJianKang.---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -517,11 +517,11 @@
 			baseConfigurationReference = 4313F23DC73D0636BC000070 /* Pods-扫描二维码.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YUSZJ893SU;
+				DEVELOPMENT_TEAM = 4J5JWPJ294;
 				INFOPLIST_FILE = "扫描二维码/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "KuaiJianKang.-----";
+				PRODUCT_BUNDLE_IDENTIFIER = "KuaiJianKang.---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
