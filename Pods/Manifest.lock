@@ -1,0 +1,15 @@
+PODS:
+  - QRCodeReaderViewController (4.0.2)
+  - SVProgressHUD (2.1.2)
+
+DEPENDENCIES:
+  - QRCodeReaderViewController (~> 4.0.2)
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  QRCodeReaderViewController: e8f27d035b3e72b1d4b1c61ff66458287e3be0ff
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+
+PODFILE CHECKSUM: 15cccd290db4a5567b19cb69700956bbd26c360a
+
+COCOAPODS: 1.2.0
